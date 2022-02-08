@@ -63,4 +63,4 @@ module.exports = {
   highestCount,
   splitSentence,
   techList,
-};
+}; 
