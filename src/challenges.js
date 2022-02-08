@@ -1,6 +1,13 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(fofoca1, fofoca2) {
+  let resultado = fofoca1 && fofoca2;
+  
+  if(fofoca1 === true && fofoca2 === true){
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+  return resultado;
 }
 
 // Desafio 2
