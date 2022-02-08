@@ -11,8 +11,10 @@ function compareTrue(fofoca1, fofoca2) {
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(base, height) {
+  let area = base * height;
+
+  return area / 2;
 }
 
 // Desafio 3
