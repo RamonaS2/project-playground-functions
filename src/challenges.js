@@ -75,18 +75,30 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(array) {
+  // / 3 = "fizz"
+  // / 5 = 'buzz'
+  // / 3 && 5 = 'fizzbuzz'
+  // se n for / 3 e 5 = 'bug!'
+let arrNum = [];
+
+  for(let i = 0; i <= array.length; i += 1){
+    if(array[i] %3 === 0){
+      arrNum.push("fizz", );
+    } else if(array[i] %5 === 0){
+      arrNum.push("buzz", );
+    } else if (array[i] %3 === 0 && array[i] %5 === 0){
+      arrNum.push("fizzbuzz", );
+    } else if (array[i] %3 !== 0 && array[i] %5 !== 0){
+      arrNum.push("bug!");
+    }
+  }
+  return arrNum;
 }
 
 // Desafio 9
 function encode(string) {
-// a -> 1
-// e -> 2
-//i -> 3
-//o -> 4
-//u -> 5
-let resultado = [];
+
 for(index = 0; index <= string.length; index += 1){
   if (string[index] === 'a'){
     string = string.replace(/a/g, "1");
@@ -107,8 +119,8 @@ for(index = 0; index <= string.length; index += 1){
 }
 return string;
 }
-function decode(string) {
-  for (let i = 0; i = string.length; i +=1){
+function decode(string){
+  for (let i = 0; i <= string.length; i +=1){
     if(string[i] === '1'){
       string = string.replace(/1/g, 'a');
     } else if(string[i] === '2'){
@@ -117,11 +129,11 @@ function decode(string) {
       string = string.replace(/3/g, 'i');
     } else if(string[i] === '4'){
       string = string.replace(/4/g, 'o');
-    } else if(string[i] === 'u'){
-      string = string.replace(/u/g, '5');
+    } else if(string[i] === '5'){
+      string = string.replace(/5/g, 'u');
     }
   }
-  return string;
+  return string; 
 }
 
 // Desafio 10
